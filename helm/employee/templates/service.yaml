@@ -1,0 +1,16 @@
+# Service - LoadBalancer
+# # pb-service -lb.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: employee-service
+  labels:
+    app: employee-app
+spec:
+  selector:
+    app: employee-app
+  type: LoadBalancer
+  ports:
+    - nodePort: 32751
+      port: 8085
+      targetPort: 8085
