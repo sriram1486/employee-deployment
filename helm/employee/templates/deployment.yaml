@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: employee-container
-          image: employee-service:latest
+          image: sriram1406/employee-service:latest
           imagePullPolicy: Always
           resources:
             limits:
