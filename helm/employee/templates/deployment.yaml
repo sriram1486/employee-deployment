@@ -8,7 +8,6 @@ spec:
   replicas: 1
   strategy:
     type: RollingUpdate
-    rollingUpdate:
   minReadySeconds: 5
   revisionHistoryLimit: 10
   selector:
@@ -33,4 +32,4 @@ spec:
           ports:
             - containerPort: 8085
       imagePullSecrets:
-        - name: regcred
+        - name: Sriram@1234$
