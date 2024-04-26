@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: employee-container
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: employee-service:latest
           imagePullPolicy: Always
           resources:
             limits:
